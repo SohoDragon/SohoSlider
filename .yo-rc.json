@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.6.0",
+    "libraryName": "soho-slider",
+    "libraryId": "d3b73ba9-05c7-4758-a550-06c1ac24a877",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

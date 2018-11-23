@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List
+    xmlns:ows="Microsoft SharePoint" Title="ImageRotatorList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ImageRotatorList" BaseType="0"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+    <MetaData>
+        <ContentTypes>
+            <ContentType ID="0x01000668A41CED0840E0AB7A0B2FE1AF74AD" Name="Image Rotator Content Type" Group="SPFx Content Types" Description="Image Rotator Content Type" Inherits="TRUE" Overwrite="TRUE" Version="0">
+                <FieldRefs>
+                    <FieldRef ID="{E492B795-7BA2-4A51-9954-E9EE214F8377}" Name="ImageRotatorImage" DisplayName="Image" Required="TRUE" Hidden="FALSE" />
+                    <FieldRef ID="{03532CAC-572F-48C6-91E0-AC97AC2CC2A8}" Name="ImageRotatorLink" DisplayName="Link" Required="FALSE" Hidden="FALSE" />
+                    <FieldRef ID="{D6003179-4BFB-480A-9777-7A20FAA3371C}" Name="ImageRotatorVerticalTextPosition" DisplayName="Vertical Position" Required="FALSE" Hidden="FALSE"  />
+                    <FieldRef ID="{944840C9-C22A-42FF-8A38-66B79A1BD4BC}" Name="ImageRotatorHorizontalTextPosition" DisplayName="Horizontal Position" Required="FALSE" Hidden="FALSE" />
+                    <FieldRef ID="{89E47BD8-27DB-434D-AC35-3067751BE695}" Name="ImageRotatorSequence" DisplayName="Sequence" Required="FALSE" />
+                    <FieldRef ID="{1A416E00-1CC4-4890-8393-F0852625F47C}" Name="ImageRotatorNewWindow" DisplayName="New Window" Required="FALSE"/>
+                    <FieldRef ID="{1163DDF8-AB34-41F7-A227-5EAA376CB274}" Name="ImageRotatorStartDate" DisplayName="Start Date" Required="FALSE" Hidden="FALSE" />
+                    <FieldRef ID="{C9A3896A-D78E-4CB9-B365-7E556B06CDAE}" Name="ImageRotatorEndDate" DisplayName="End Date" Required="FALSE" Hidden="FALSE" />
+                </FieldRefs>
+            </ContentType>
+        </ContentTypes>
+        <Fields>
+            <Field ID="{E492B795-7BA2-4A51-9954-E9EE214F8377}" Name="ImageRotatorImage" StaticName="ImageRotatorImage" DisplayName="Image" Type="Image" Group="SPFx Site Columns" Required="FALSE" RichText="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" />
+            <Field ID="{03532CAC-572F-48C6-91E0-AC97AC2CC2A8}" Name="ImageRotatorLink" StaticName="ImageRotatorLink" DisplayName="Link" Type="Text" Group="SPFx Site Columns" Required="FALSE" MaxLength="255" />
+            <Field ID="{D6003179-4BFB-480A-9777-7A20FAA3371C}" Name="ImageRotatorVerticalTextPosition" StaticName="ImageRotatorVerticalTextPosition" DisplayName="Vertical Position" Type="Choice" Group="SPFx Site Columns" Required="FALSE">
+                <Default>Bottom</Default>
+                <CHOICES>
+                    <CHOICE>Top</CHOICE>
+                    <CHOICE>Middle</CHOICE>
+                    <CHOICE>Bottom</CHOICE>
+                </CHOICES>
+            </Field>
+            <Field ID="{944840C9-C22A-42FF-8A38-66B79A1BD4BC}" Name="ImageRotatorHorizontalTextPosition" StaticName="ImageRotatorHorizontalTextPosition" DisplayName="Horizontal Position" Type="Choice" Group="SPFx Site Columns" Required="FALSE">
+                <Default>Left</Default>
+                <CHOICES>
+                    <CHOICE>Left</CHOICE>
+                    <CHOICE>Center</CHOICE>
+                    <CHOICE>Right</CHOICE>
+                </CHOICES>
+            </Field>
+            <Field ID="{1163DDF8-AB34-41F7-A227-5EAA376CB274}" Name="ImageRotatorStartDate" StaticName="ImageRotatorStartDate" DisplayName="Start Date" Type="DateTime" Group="SPFx Site Columns" Required="FALSE" Hidden="FALSE" Format="DateOnly" />
+            <Field ID="{C9A3896A-D78E-4CB9-B365-7E556B06CDAE}" Name="ImageRotatorEndDate" StaticName="ImageRotatorEndDate" DisplayName="End Date" Type="DateTime" Group="SPFx Site Columns" Required="FALSE" Hidden="FALSE" Format="DateOnly" />
+            <Field ID="{1A416E00-1CC4-4890-8393-F0852625F47C}" Name="ImageRotatorNewWindow" StaticName="ImageRotatorNewWindow" Group="SPFx Site Columns" DisplayName="New Window" Type="Boolean" Required="FALSE">
+                <Default>0</Default>
+            </Field>
+            <Field ID="{89E47BD8-27DB-434D-AC35-3067751BE695}" Name="ImageRotatorSequence" StaticName="ImageRotatorSequence" Group="SPFx Site Columns" DisplayName="Sequence" Type="Number" Required="FALSE" Min="0" Max="9999"/>
+        </Fields>
+        <Views>
+            <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+                <Toolbar Type="Standard" />
+                <XslLink Default="TRUE">main.xsl</XslLink>
+                <RowLimit Paged="TRUE">30</RowLimit>
+                <ViewFields>
+                    <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+                </ViewFields>
+                <Query>
+                    <OrderBy>
+                        <FieldRef Name="ImageRotatorSequence" Ascending="FALSE"></FieldRef>
+                    </OrderBy>
+                </Query>
+                <ParameterBindings>
+                    <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+                    <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+                    <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+                </ParameterBindings>
+            </View>
+            <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+                <Toolbar Type="Standard" />
+                <XslLink Default="TRUE">main.xsl</XslLink>
+                <JSLink>clienttemplates.js</JSLink>
+                <RowLimit Paged="TRUE">100</RowLimit>
+                <ViewFields>
+                    <FieldRef Name="LinkTitle"></FieldRef>
+                    <FieldRef Name="ImageRotatorImage"></FieldRef>
+                    <FieldRef Name="ImageRotatorLink"></FieldRef>
+                    <FieldRef Name="ImageRotatorVerticalTextPosition"></FieldRef>
+                    <FieldRef Name="ImageRotatorHorizontalTextPosition"></FieldRef>
+                    <FieldRef Name="ImageRotatorNewWindow"></FieldRef>
+                    <FieldRef Name="ImageRotatorSequence"></FieldRef>
+                    <FieldRef Name="ImageRotatorStartDate"></FieldRef>
+                    <FieldRef Name="ImageRotatorEndDate"></FieldRef>
+                </ViewFields>
+                <Query>
+                    <OrderBy>
+                        <FieldRef Name="ID"></FieldRef>
+                    </OrderBy>
+                </Query>
+                <ParameterBindings>
+                    <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+                    <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+                </ParameterBindings>
+            </View>
+        </Views>
+        <Forms>
+            <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+            <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+            <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+        </Forms>
+    </MetaData>
+</List>

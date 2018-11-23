@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <!-- List (TemplateType 100) -->
+    <ListInstance
+            CustomSchema="listSchema.xml"
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            Title="Image Rotator List"
+            Description=""
+            TemplateType="100"
+            Url="Lists/ImageRotatorList"
+            Hidden="FALSE">
+            <!-- Add default data with the list -->
+            <!-- Note: Deactivating and activating the feature will
+            duplicate the data, so remove or comment if no initial data needed
+            -->
+            <Data>
+                <Rows>
+                    <Row>
+                        <Field Name="Title">Title 1</Field>
+                        <Field Name="ImageRotatorImage">https://picsum.photos/1200/400/?image=729</Field>
+                        <Field Name="ImageRotatorLink">http://www.google.com</Field>
+                    </Row>
+                    <Row>
+                        <Field Name="Title">Title 2</Field>
+                        <Field Name="ImageRotatorImage">https://picsum.photos/1200/400/?image=907</Field>
+                        <Field Name="ImageRotatorStartDate">2018-09-20T08:00:00</Field>
+                        <Field Name="ImageRotatorEndDate">2018-09-25T08:00:00</Field>
+                    </Row>
+                    <Row>
+                        <Field Name="Title">Title 3</Field>
+                        <Field Name="ImageRotatorImage">https://picsum.photos/1200/400/?image=1058</Field>
+                        <Field Name="ImageRotatorLink">https://monsterenergycorp.sharepoint.com/sites/MyMonsterDEV</Field>
+                        <Field Name="ImageRotatorNewWindow">1</Field>
+                    </Row>
+                </Rows>
+            </Data>
+    </ListInstance>
+</Elements>

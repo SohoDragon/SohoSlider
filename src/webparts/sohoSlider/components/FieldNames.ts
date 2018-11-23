@@ -1,0 +1,10 @@
+export const IdFieldName: string = "ID";
+export const TitleFieldName: string = "Title";
+export const ImageRotatorImageFieldName: string = "ImageRotatorImage";
+export const ImageRotatorLinkFieldName: string = "ImageRotatorLink";
+export const ImageRotatorVerticalTextPositionFieldName : string = "ImageRotatorVerticalTextPosition";
+export const ImageRotatorHorizontalTextPositionFieldName : string = "ImageRotatorHorizontalTextPosition";
+export const ImageRotatorSequenceFieldName : string = "ImageRotatorSequence";
+export const ImageRotatorNewWindowFieldName : string = "ImageRotatorNewWindow";
+export const ImageRotatorStartDateFieldName : string = "ImageRotatorStartDate";
+export const ImageRotatorEndDateFieldName : string = "ImageRotatorEndDate";

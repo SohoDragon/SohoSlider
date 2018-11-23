@@ -1,0 +1,28 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+    "solution": {
+        "name": "soho-slider-client-side-solution",
+        "id": "d3b73ba9-05c7-4758-a550-06c1ac24a877",
+        "version": "1.0.0.4",
+        "includeClientSideAssets": true,
+        "features": [
+            {
+                "title": "Soho Slider List Feature",
+                "description": "This package deploys custom list defintion for the Modern Soho Slider web part",
+                "id": "e932ce6f-b41b-4cc2-84cf-cd33265562ee",
+                "version": "1.0.0.0",
+                "assets": {
+                    "elementManifests": [
+                        "elements.xml"
+                    ],
+                    "elementFiles": [
+                        "listSchema.xml"
+                    ]
+                }
+            }
+        ]
+    },
+    "paths": {
+        "zippedPackage": "solution/soho-slider.sppkg"
+    }
+}

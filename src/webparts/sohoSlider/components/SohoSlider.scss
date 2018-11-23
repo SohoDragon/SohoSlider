@@ -1,0 +1,119 @@
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  display: none !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #c9ff29 !important;
+}
+
+$spacing: 1%;
+
+.slider-item {
+  display: block;
+  position: relative;
+  .slider-image {
+    display: block;
+
+    img {
+      border: 0;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .text-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    float: none;
+
+    &.left {
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+
+      .text {
+        margin-left: $spacing;
+      }
+    }
+
+    &.right {
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+
+      .text {
+        margin-right: $spacing;
+      }
+    }
+
+    &.center {
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    &.top {
+      -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+      align-content: flex-start;
+
+      .text {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        margin-top: $spacing;
+      }
+    }
+
+    &.middle {
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+
+      .text {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+      }
+    }
+
+    &.bottom {
+      -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+      align-content: flex-end;
+
+      .text {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        margin-bottom: $spacing;
+      }
+    }
+
+    .text {
+      padding: 5px 25px;
+      display: inline-block;
+      font-size: 1.5em;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      background: rgba(0, 0, 0, 0.65);
+      max-width: 33%;
+      color: #ffffff;
+    }
+  }
+}
