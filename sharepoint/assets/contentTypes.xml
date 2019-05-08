@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <!-- Parent ContentType: Item (0x01) -->
-  <ContentType ID="0x01000668A41CED0840E0AB7A0B2FE1AF74AD" Name="Image Rotator Content Type" Group="SPFx Content Types" Description="Image Rotator Content Type" Inherits="TRUE" Overwrite="TRUE" Version="0">
+  <ContentType ID="0x01000668A41CED0840E0AB7A0B2FE1AF74AD" Name="Image Rotator Content Type" Group="SoHo Slider Content Types" Description="SoHo Slider Content Type" Inherits="TRUE" Overwrite="TRUE" Version="0">
     <FieldRefs>
       <FieldRef ID="{E492B795-7BA2-4A51-9954-E9EE214F8377}" Name="ImageRotatorImage" DisplayName="Image" Required="TRUE" Hidden="FALSE" />
       <FieldRef ID="{03532CAC-572F-48C6-91E0-AC97AC2CC2A8}" Name="ImageRotatorLink" DisplayName="Link" Required="FALSE" Hidden="FALSE" />

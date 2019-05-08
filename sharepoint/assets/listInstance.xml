@@ -18,7 +18,7 @@
                     <Row>
                         <Field Name="Title">Title 1</Field>
                         <Field Name="ImageRotatorImage">https://picsum.photos/1200/400/?image=729</Field>
-                        <Field Name="ImageRotatorLink">http://www.google.com</Field>
+                        <Field Name="ImageRotatorLink">https://sohodragon.nyc/</Field>
                     </Row>
                     <Row>
                         <Field Name="Title">Title 2</Field>
@@ -29,7 +29,7 @@
                     <Row>
                         <Field Name="Title">Title 3</Field>
                         <Field Name="ImageRotatorImage">https://picsum.photos/1200/400/?image=1058</Field>
-                        <Field Name="ImageRotatorLink">https://monsterenergycorp.sharepoint.com/sites/MyMonsterDEV</Field>
+                        <Field Name="ImageRotatorLink">https://sohodragon.nyc/</Field>
                         <Field Name="ImageRotatorNewWindow">1</Field>
                     </Row>
                 </Rows>
