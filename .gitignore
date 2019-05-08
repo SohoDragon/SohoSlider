@@ -7,11 +7,11 @@ npm-debug.log*
 node_modules
 
 # Build generated files
-dist
+dist/*.json
+dist/*.js
 lib
 solution
 temp
-*.sppkg
 
 # Coverage directory used by tools like istanbul
 coverage
