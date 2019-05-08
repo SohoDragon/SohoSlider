@@ -3,7 +3,7 @@
     "solution": {
         "name": "soho-slider-client-side-solution",
         "id": "d3b73ba9-05c7-4758-a550-06c1ac24a877",
-        "version": "1.0.0.4",
+        "version": "1.0.0.165",
         "includeClientSideAssets": true,
         "features": [
             {

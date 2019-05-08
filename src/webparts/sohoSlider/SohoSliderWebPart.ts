@@ -11,7 +11,8 @@ import * as strings from 'SohoSliderWebPartStrings';
 import SohoSlider from './components/SohoSlider';
 import ISohoSliderProps from './components/ISohoSliderProps';
 import { SPComponentLoader } from "@microsoft/sp-loader";
-
+import "@pnp/polyfill-ie11";
+import { sp } from "@pnp/sp";
 export default class SohoSliderWebPart extends BaseClientSideWebPart<ISohoSliderProps> {
 
   public onInit(): Promise<void> {
@@ -21,7 +22,11 @@ export default class SohoSliderWebPart extends BaseClientSideWebPart<ISohoSlider
     SPComponentLoader.loadCss(
       "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
     );
-    return Promise.resolve();
+    return super.onInit().then(_ => {
+      sp.setup({
+        spfxContext: this.context
+      });
+    });
   }
 
   public render(): void {
