@@ -1,6 +1,5 @@
 ## soho-slider
 
-This is where you include your WebPart documentation.
 
 
 1. Go to this URL https://github.com/SohoDragon/SohoSlider/blob/master/dist/soho-slider.sppkg
@@ -16,7 +15,7 @@ This is where you include your WebPart documentation.
 11. Click on the link "Click here to Insert a picture from SharePoint".
 12. Under Selected Image, enter a URL for the Image and click Ok
 13. Click Save
- 
+
 
 
 
