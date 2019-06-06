@@ -6,6 +6,7 @@
 2. Click on Download. This should save a file called soho-slider.sppkg to your desktop.
 3. Add this to your App Catalog. Please follow the steps listed here https://docs.microsoft.com/en-us/sharepoint/use-app-catalog to do so.
 4. Add the app to a SharePoint Page
+![](http://g.recordit.co/xCU13Lo8ov.gif)
 5. Click on the Pencil Icon,to edit the app "Soho Slider".
 6. Enter the List Name as "Image Rotator List"
 7. Save the Page
