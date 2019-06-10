@@ -16,3 +16,4 @@
 11. Click on the link "Click here to Insert a picture from SharePoint".
 12. Under Selected Image, enter a URL for the Image and click Ok
 13. Click Save
+![](http://g.recordit.co/ilBVaLMSxk.gif)
