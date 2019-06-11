@@ -1,4 +1,5 @@
 ## soho-slider
+![](http://g.recordit.co/taL4mGB8kt.gif)
 
 
 
